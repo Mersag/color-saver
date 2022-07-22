@@ -1,0 +1,9 @@
+h1 {
+  text-align: center;
+  border: 8px solid whitesmoke;
+  border-left: 5px;
+  border-right: 5px;
+  border-width: 10px;
+  font-family: "Times New Roman", Times, serif;
+  color: whitesmoke;
+}

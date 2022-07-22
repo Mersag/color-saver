@@ -1,5 +1,5 @@
 import "./App.css";
-import ColorCard from "./Component/ColorCard.js";
+import ColorCard from "./Components/ColorCard";
 
 export default function App() {
   const colors = [
@@ -33,13 +33,18 @@ export default function App() {
     },
   ];
 
-  const mappedArray = colors.map((color) => {
-    return (
-      <ColorCard
-        key={color.id + "-" + color.name}
-        text={color.id}
-        color={color.color}
-      />
-    );
-  });
+  return (
+    <>
+      <h1>Color Saver App </h1>
+      {colors.map((color) => {
+        return (
+          <ColorCard
+            key={color.id + "-" + color.name}
+            text={color.id}
+            color={color.color}
+          />
+        );
+      })}
+    </>
+  );
 }

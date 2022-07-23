@@ -7,3 +7,18 @@ h1 {
   font-family: "Times New Roman", Times, serif;
   color: whitesmoke;
 }
+
+.Color-Card {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+}
+.ColorHex {
+  border-radius: 10px;
+  border: 2px solid whitesmoke;
+}

@@ -1,0 +1,38 @@
+.Card-Container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.Page {
+  width: 100%;
+  height: auto;
+}
+.cardForm {
+  background-color: gray;
+}
+.FormContainer {
+  display: flex;
+  justify-content: center;
+}
+.farbeInput {
+  width: 60%;
+  margin-bottom: 5px;
+}
+.hexInput {
+  width: 60%;
+  margin-bottom: 5px;
+}
+.colorButton {
+  background-color: green;
+  color: whitesmoke;
+  border-radius: 10px;
+  width: 60%;
+}
+.trenner {
+  height: 10px;
+  background-color: whitesmoke;
+  margin: 30px 0;
+}

@@ -34,17 +34,31 @@ export default function App() {
   ];
 
   return (
-    <>
+    <div className="Page">
       <h1>Color Saver App </h1>
-      {colors.map((color) => {
-        return (
-          <ColorCard
-            key={color.id + "-" + color.name}
-            text={color.id}
-            color={color.color}
-          />
-        );
-      })}
-    </>
+      <h1>Add new Colors</h1>
+      <div className="FormContainer">
+        <form
+          className="Color-Card cardForm"
+          onSubmit={(event) => {
+            event.preventDefault();
+          }}
+        >
+          <input required type="color" className="farbeInput" />
+          <input required type="text" className="hexInput" />
+          <button className="colorButton">Add Color</button>
+        </form>
+      </div>
+
+      <h1>Your Saved Colors</h1>
+
+      <div className="Card-Container">
+        {colors.map((color) => {
+          return (
+            <ColorCard key={color.id + "-" + color.name} color={color.id} />
+          );
+        })}
+      </div>
+    </div>
   );
 }

@@ -4,7 +4,7 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
 .Page {
   width: 100%;
@@ -26,13 +26,8 @@
   margin-bottom: 5px;
 }
 .colorButton {
-  background-color: green;
+  background-color: rgb(21, 207, 186);
   color: whitesmoke;
   border-radius: 10px;
   width: 60%;
-}
-.trenner {
-  height: 10px;
-  background-color: whitesmoke;
-  margin: 30px 0;
 }

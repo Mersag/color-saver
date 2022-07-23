@@ -3,9 +3,20 @@ h1 {
   border: 8px solid whitesmoke;
   border-left: 5px;
   border-right: 5px;
-  border-width: 10px;
+  border-width: 8px;
+  padding: 10px;
   font-family: "Times New Roman", Times, serif;
   color: whitesmoke;
+}
+h2 {
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Times New Roman", Times, serif;
+}
+h3 {
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .Color-Card {

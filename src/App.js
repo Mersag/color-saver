@@ -36,7 +36,7 @@ export default function App() {
   return (
     <div className="Page">
       <h1>Color Saver App </h1>
-      <h1>Add new Colors</h1>
+      <h2>Add new Colors</h2>
       <div className="FormContainer">
         <form
           className="Color-Card cardForm"
@@ -50,7 +50,7 @@ export default function App() {
         </form>
       </div>
 
-      <h1>Your Saved Colors</h1>
+      <h3>Your Saved Colors</h3>
 
       <div className="Card-Container">
         {colors.map((color) => {

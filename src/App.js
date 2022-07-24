@@ -4,7 +4,7 @@ import "./App.css";
 import ColorCard from "./Components/ColorCard";
 
 export default function App() {
-  const colors = [
+  const [colors, setColors] = useState([
     {
       id: "#e08dac",
       name: "Charme Pink",
@@ -29,14 +29,12 @@ export default function App() {
       id: "#6a7fdb",
       name: "Blue Jeans",
     },
-    {
-      id: "#5ccae3",
-      name: "Sky Blue Crayola",
-    },
-  ];
+  ]);
+  //const [newColor, setNewColor] = usestate(““)
+  //function handleSubmit(event) {}
 
   return (
-    <div className="Page">
+    <div className="page">
       <h1>Color Saver App </h1>
       <h2>Add new Colors</h2>
       <div className="FormContainer">
@@ -47,7 +45,7 @@ export default function App() {
           }}
         >
           <input type="color" className="colorInput" />
-          <input type="text" className="hexInput" />
+          <input type="text" className="hexInput" onChange="" />
           <button label="colorButton">Add Color</button>
         </form>
       </div>

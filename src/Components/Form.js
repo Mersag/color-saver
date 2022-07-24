@@ -8,9 +8,9 @@ export default function Form({ color }) {
           event.preventDefault();
         }}
       >
-        <input required type="color" className="farbeInput" />
-        <input required type="text" className="hexInput" />
-        <button className="colorButton">Add Color</button>
+        <input type="color" className="farbeInput" />
+        <input type="text" className="hexInput" />
+        <button label="colorButton">Add Color</button>
       </form>
     </div>
   );

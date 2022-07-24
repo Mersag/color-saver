@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import "./App.css";
 import ColorCard from "./Components/ColorCard";
 
@@ -44,9 +46,9 @@ export default function App() {
             event.preventDefault();
           }}
         >
-          <input required type="color" className="farbeInput" />
-          <input required type="text" className="hexInput" />
-          <button className="colorButton">Add Color</button>
+          <input type="color" className="colorInput" />
+          <input type="text" className="hexInput" />
+          <button label="colorButton">Add Color</button>
         </form>
       </div>
 

@@ -1,3 +1,4 @@
+import { buildQueries } from "@testing-library/react";
 import { useState } from "react";
 
 import "./App.css";
@@ -31,6 +32,15 @@ export default function App() {
       name: "Blue Jeans",
     },
   ]);
+  function addNewColor(newColor) {
+    setColors([
+      ...colors,
+      {
+        id: newColor,
+        name: "blue",
+      },
+    ]);
+  }
   //const [newColor, setNewColor] = usestate(““)
   //function handleSubmit(event) {}
 
@@ -38,7 +48,7 @@ export default function App() {
     <div className="page">
       <h1>Color Saver App </h1>
       <h2>Add new Colors</h2>
-      <Form />
+      <Form onSubmit={addNewColor} />
 
       <h3>Your Saved Colors</h3>
 

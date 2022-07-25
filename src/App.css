@@ -10,9 +10,7 @@
   width: 100%;
   height: auto;
 }
-.cardForm {
-  background-color: gray;
-}
+
 .FormContainer {
   display: flex;
   justify-content: center;

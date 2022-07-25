@@ -1,13 +1,16 @@
 import { useState } from "react";
 import "./Form.css";
-export default function Form({}) {
-  const [color, setColor] = useState("#57E2E5");
+export default function Form({ onSubmit }) {
+  const [color, setColor] = useState("#FF0000");
+  console.log(color);
   return (
     <div className="FormContainer">
       <form
         className="Color-Card cardForm"
+        style={{ backgroundColor: color }}
         onSubmit={(event) => {
           event.preventDefault();
+          onSubmit(color);
         }}
       >
         <input

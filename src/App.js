@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import "./App.css";
 import ColorCard from "./Components/ColorCard";
+import Form from "./Components/Form";
 
 export default function App() {
   const [colors, setColors] = useState([
@@ -37,18 +38,7 @@ export default function App() {
     <div className="page">
       <h1>Color Saver App </h1>
       <h2>Add new Colors</h2>
-      <div className="FormContainer">
-        <form
-          className="Color-Card cardForm"
-          onSubmit={(event) => {
-            event.preventDefault();
-          }}
-        >
-          <input type="color" className="colorInput" />
-          <input type="text" className="hexInput" onChange="" />
-          <button label="colorButton">Add Color</button>
-        </form>
-      </div>
+      <Form />
 
       <h3>Your Saved Colors</h3>
 

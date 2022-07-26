@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Form.css";
-export default function Form({ onSubmit }) {
+export default function Form({ onAddNewColor }) {
   const [color, setColor] = useState("#FF0000");
   console.log(color);
   return (
@@ -10,7 +10,7 @@ export default function Form({ onSubmit }) {
         style={{ backgroundColor: color }}
         onSubmit={(event) => {
           event.preventDefault();
-          onSubmit(color);
+          onAddNewColor(color);
         }}
       >
         <input

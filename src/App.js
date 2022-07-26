@@ -48,7 +48,7 @@ export default function App() {
     <div className="page">
       <h1>Color Saver App </h1>
       <h2>Add new Colors</h2>
-      <Form onSubmit={addNewColor} />
+      <Form onAddNewColor={addNewColor} />
 
       <h3>Your Saved Colors</h3>
 
